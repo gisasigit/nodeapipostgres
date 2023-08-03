@@ -22,9 +22,10 @@ app.post('/users', db.createUser)
 app.put('/users/:id', db.updateUser)
 app.delete('/users/:id', db.deleteUser)
 app.get('/auth/:id',db.showUserPass)
-app.get('/film/', db.getDataFilm)
+app.get('/films/', db.getDataFilm)
 app.get('/usercsv/:id', db.csvUserById)
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`)
 })
+// test commit
